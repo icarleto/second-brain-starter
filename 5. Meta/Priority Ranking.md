@@ -1,35 +1,32 @@
 ---
 type: meta
 status: reference
-tags: [meta]
+tags: [meta, projects, priority]
 ---
 
 # Priority Ranking
 
-One ordered list of everything active, so the daily note and the dashboards agree about what
-matters instead of each having an opinion.
+Hand-ranked, most important project first. **Row order is the data.** Nothing derives from this
+table automatically and nothing feeds it. It is not a Dataview query, it is a list you keep in the
+order you actually mean.
 
-**This is a view, not a list you maintain by hand.** The order comes from the `priority:` number in
-each project's own frontmatter. To reorder, change the number on the project. Editing this note
-does nothing.
+**To reorder:** open this note directly, in **Live Preview** rather than Source mode. Hover over a
+row and a drag handle appears in the left gutter. Drag it where it belongs. That is native Obsidian
+table editing, no plugin needed.
 
-That indirection is deliberate. A hand-maintained ranking here would be a second copy of
-information that already exists, and the two would disagree within a week.
+**There is deliberately no rank-number column.** A `#` column would have to be renumbered by hand
+after every single drag, and the number would contradict the row order the moment you moved
+anything. Position is the rank. This is worth understanding before you are tempted to add one,
+because a priority number stored per project has the same problem spread across more files:
+reordering three projects means editing three notes instead of dragging one row.
 
-```dataview
-TABLE priority AS "#", area AS "Area", status AS "Status"
-FROM "3. Projects"
-WHERE type = "project" AND status = "active"
-SORT priority ASC
-```
+**Maintenance rule:** only active projects belong here. The moment a project is done, shelved, or
+someday, delete its row. Do not backfill things you are not working on.
 
-## Projects with no priority set
+The **Why** column is the one thing in this table that is not recorded anywhere else in the vault.
+The order says *what* is next; the Why says *why*, so that in a month you can tell the difference
+between a considered ranking and one you have simply not revisited.
 
-These will not appear above. Give them a `priority:` number or accept that they are invisible to
-every ranked view.
-
-```dataview
-TABLE area AS "Area"
-FROM "3. Projects"
-WHERE type = "project" AND status = "active" AND !priority
-```
+| Project | Area | Why it ranks here |
+|---|---|---|
+| [[Set Up This Vault]] | Creation | Nothing else works until this is done |

@@ -5,38 +5,36 @@ tags: [meta, onboarding]
 
 # Start here
 
-You have a working vault. Three things make it yours, and they take about twenty minutes.
+You have a working vault. Two things make it yours.
 
-## 1. Tell Claude who you are
+## 1. Run the setup interview
 
-Open `.claude/CLAUDE.md` and fill in every **FILL IN**. The "Who I'm helping" section matters most:
-two honest paragraphs about your situation, your money, who else is affected by your decisions, and
-what you are trying to change.
+Open Claude Code in this folder and say:
 
-This is the difference between an assistant that knows your circumstances and one that gives you
-advice meant for someone else.
+```
+Run the vault setup.
+```
 
-## 2. Make the Areas yours
+Claude will ask you about yourself, your work, how you want to be spoken to, and what you are
+actually working on right now. Then it writes its own instructions from your answers, renames the
+Areas to yours, and creates your first projects.
 
-`2. Areas` ships with five: Family, Professional, Home, Discipline, Creation. Rename them, merge
-them, replace them. Then **close the list** and stop adding.
+You are not filling in a form. You are telling it what it needs to know, once, so that every
+session afterwards already knows.
 
-A closed list forces the useful question. When something does not fit, it is nearly always a
-Project inside an existing Area, not a new Area. An open list has no filing rule at all, and within
-three months there are nineteen of them and nothing can be found.
+**Answer the personal questions as honestly as you are willing to.** It asks about money and about
+who else is affected by your decisions because those change the advice it gives. A short answer is
+fine and so is declining. It will not ask twice.
 
-If you change the names, update the tag list in the Untriaged Tasks query on
-`0. Dashboards/2. Areas Dashboard`.
-
-## 3. Write today's daily note badly
+## 2. Write today's daily note badly
 
 `Ctrl/Cmd+P`, then **Daily notes: Open today's daily note**.
 
 Write it badly on purpose. Do not organise, do not decide what belongs where. Dump the day in
-whatever order it comes out, mixing work and home and everything else in one paragraph. That is
-what a real daily note looks like, and the filing is the job you are handing off.
+whatever order it comes out, mixing work and home and everything else together. That is what a real
+daily note looks like, and the filing is the job you are handing off.
 
-Then open Claude Code in this folder and say:
+Then tell Claude:
 
 ```
 Process today's daily note.
@@ -47,10 +45,6 @@ never moved.
 
 ---
 
-## Then what
-
-Open `3. Projects/Set Up This Vault` and work the list. Delete it when it is empty.
-
-**The only step that fails is the daily note.** Everything else is setup and it either worked or it
-did not. The habit is what killed the systems that came before this one. Five honest minutes a day,
-written badly, and let the machine do the filing.
+**The only step that fails is the second one.** Everything else is setup and it either worked or it
+did not. The habit is what kills systems like this. Five honest minutes a day, written badly, and
+let the machine do the filing.

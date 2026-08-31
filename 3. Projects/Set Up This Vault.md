@@ -2,7 +2,6 @@
 type: project
 area: "[[Creation]]"
 status: active
-priority: 1
 tags: [setup]
 ---
 
