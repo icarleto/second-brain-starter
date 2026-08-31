@@ -13,7 +13,7 @@ Do not clone this repository. Make your own from it, so your vault is private an
 yours:
 
 ```bash
-gh repo create my-vault --template <OWNER>/second-brain-starter --private --clone
+gh repo create my-vault --template icarleto/second-brain-starter --private --clone
 ```
 
 Then open that folder in Obsidian with **Open folder as vault**, and read `START HERE.md`.
