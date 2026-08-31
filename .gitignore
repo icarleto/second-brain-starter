@@ -1,0 +1,25 @@
+# Obsidian's own settings and caches. Machine-local, noisy, and not vault content.
+.obsidian/
+.trash/
+.smart-env/
+
+# Never track credentials. If you add scripts later, keep their token stores out too.
+.env
+.env.*
+*.env
+**/.env*
+!*.env.example
+secrets.md
+**/token_cache*.json
+**/oauth_store.json
+
+# Large binaries. Git does not diff them usefully and they bloat the repo forever.
+*.mp4
+*.mov
+*.mp3
+*.zip
+
+# Python, if you add scripts later. A virtualenv NEVER belongs in a synced or shared tree.
+__pycache__/
+*.pyc
+.venv/
