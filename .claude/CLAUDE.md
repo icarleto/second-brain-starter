@@ -138,6 +138,30 @@ A living note opens with what is true now. Nobody should scroll past history to 
 position. Older detail moves to a Notes/Log section further down, or out entirely once git is
 holding it.
 
+### Obsidian primitives: how not to break a note while editing it
+
+The rules above say what a note *is*. These are about not damaging one on the way past.
+
+- **Never break a Dataview block.** A ```` ```dataview ```` or ```` ```dataviewjs ```` fence is
+  executable code, not prose, and a mangled query **renders empty rather than erroring**. That
+  looks exactly like a dashboard correctly reporting nothing, which is the worst kind of failure
+  because nobody notices it. Do not reformat, rewrap or tidy a query while editing the note around
+  it. Change one only when changing it is the actual task.
+- **`.obsidian/` is off limits unless it is the task.** It is Obsidian's own config, not vault
+  content. Read it to check a setting, never edit it in passing.
+- **Wikilinks in notes, markdown links in chat.** Inside a note, `[[Note]]` is correct: it
+  resolves, it creates a backlink, and it survives the file being renamed. In a reply to me, a
+  normal markdown link is the one I can actually click. Two surfaces, two right answers.
+- **Read a note's embedded images, not just its text.** `![[photo.jpg]]` is content. If what a
+  note means depends on a picture in it, open the picture before summarising or acting on it.
+- **Follow the wikilinks when reading for context.** A note's outbound links are usually the rest
+  of the answer.
+- **An image linked by URL is a note that depends on someone else's server.** When you find
+  `![alt](https://...)` in a note, download it into `4. Resources/Attachments` and replace the link
+  with a normal embed. Representation only: the image, its position, and every other character of
+  surrounding prose stay exactly as they were.
+- **Never guess the date or time. Get it from the system.**
+
 ---
 
 ## Standing duties
