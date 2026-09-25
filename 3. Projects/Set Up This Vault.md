@@ -20,7 +20,7 @@ day, and so your first tasks are already written.
 
 ## Later
 
-- Set a `priority:` number on each project so the ranked views work.
+- Describe each Area's current state, one Area at a time, by asking Claude to interview you.
 - Write one daily note badly, then ask Claude to process it.
 - Update the tag names in the Untriaged Tasks query on the Areas Dashboard to match your areas.
 - Delete this note.

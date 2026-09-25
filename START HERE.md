@@ -5,7 +5,7 @@ tags: [meta, onboarding]
 
 # Start here
 
-You have a working vault. Two things make it yours.
+You have a working vault. Three things make it yours.
 
 ## 1. Run the setup interview
 
@@ -15,9 +15,9 @@ Open Claude Code in this folder and say:
 Run the vault setup.
 ```
 
-Claude will ask you about yourself, your work, how you want to be spoken to, and what you are
-actually working on right now. Then it writes its own instructions from your answers, renames the
-Areas to yours, and creates your first projects.
+Claude will ask you about yourself, your work, your money situation, who else is affected by your
+decisions, how you want to be spoken to, and what your Areas should be. Then it writes its own
+instructions from your answers and renames the Areas to yours.
 
 You are not filling in a form. You are telling it what it needs to know, once, so that every
 session afterwards already knows.
@@ -26,7 +26,21 @@ session afterwards already knows.
 who else is affected by your decisions because those change the advice it gives. A short answer is
 fine and so is declining. It will not ask twice.
 
-## 2. Write today's daily note badly
+**When it asks what you are working on, "nothing yet" is a good answer.** Projects are not phase
+one. They will show up on their own, from what you write over the next few weeks.
+
+## 2. Describe your Areas
+
+Each Area note opens with a "current state" section, and right now it is blank. Filling it in is
+the real work of phase one. Do it by talking, one Area at a time:
+
+```
+Interview me about my Home area, then write its current state.
+```
+
+Say where things actually stand. Plain and specific beats polished.
+
+## 3. Write today's daily note badly
 
 `Ctrl/Cmd+P`, then **Daily notes: Open today's daily note**.
 
@@ -43,8 +57,12 @@ Process today's daily note.
 Watch where things land. Nothing in your prose gets rewritten or deleted; content is copied out,
 never moved.
 
+Do it once, at the end of the day, over the whole note. When you tell it you are done for the day,
+it marks the note processed and moves it into `1. Journal/Processed`. If you write more after it
+has run, say so and it reads the note again, filing what is new and nothing twice.
+
 ---
 
-**The only step that fails is the second one.** Everything else is setup and it either worked or it
+**The only step that fails is the daily note.** Everything else is setup and it either worked or it
 did not. The habit is what kills systems like this. Five honest minutes a day, written badly, and
 let the machine do the filing.

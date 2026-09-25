@@ -20,10 +20,10 @@ the log at the bottom, not here.
 ## Projects
 
 ```dataview
-TABLE priority AS "#", status AS "Status"
+TABLE status AS "Status"
 FROM "3. Projects"
 WHERE contains(area, "Professional")
-SORT priority ASC
+SORT file.name ASC
 ```
 
 ## Open tasks

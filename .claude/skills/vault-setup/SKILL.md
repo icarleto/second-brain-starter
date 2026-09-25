@@ -6,7 +6,9 @@ description: Run the first-time setup interview for this vault. Asks the user ab
 # Vault setup interview
 
 Fill in this vault's `CLAUDE.md` by **asking**, not by guessing. When this finishes there should be
-no `FILL IN` markers anywhere and the Areas should be the user's own.
+no `FILL IN` markers left in `CLAUDE.md` and the Areas should be the user's own. The "Current state"
+blank in each Area note stays: the user fills that in next, one Area at a time, by asking you to
+interview them about it.
 
 ## Before you start
 
@@ -31,6 +33,8 @@ away halfway through, what they already told you should be saved.
 ### 1. Who they are
 
 - Their name, and what they do for work.
+- What they want to call you. A name is optional, and "no name" is a fine answer. It fills the
+  assistant-name blank in `CLAUDE.md`.
 - What they are actually trying to build or change right now. The real answer, not a job title.
 - Whether money is tight, comfortable, or in debt. Say plainly that this changes the advice you
   give, because it does, and that is why you are asking.
@@ -63,44 +67,45 @@ decidable, and an open list has no filing rule at all. Explain that when somethi
 is nearly always a Project inside an existing Area. If they still want a sixth or seventh after
 hearing that, it is their vault. Do it and say you have noted the reasoning.
 
-### 4. Their first projects
+### 4. What they are working on
 
-Ask what they are actually working on right now. Two or three is plenty.
+Ask once what they are working on right now, and say plainly that "nothing yet" is a good answer.
+Projects are not phase one. They come later, out of what the user writes in their journal over the
+next few weeks.
 
-For each one, use the Areas versus Projects test from `CLAUDE.md`: what would make them stop
-working on it specifically? Nothing means it belongs in an Area log. A deliverable or a date means
-it is a Project. "It starts running without me" also means it is a Project, with a process finish
-line.
-
-**This is the most useful part of the interview**, because it teaches the distinction on their own
-work rather than on an example. Do it out loud: say which shape you think each one is and why, and
-let them correct you.
+Do not create project notes or add rows to `5. Meta/Priority Ranking` during setup. If they name
+something, add it as a dated entry in the Notes/Log of the Area it belongs to, and tell them that if
+it keeps coming up in their journal it will be worth making a project.
 
 ## What to change
 
-1. **`.claude/CLAUDE.md`** — replace every `FILL IN` block with their answers. Delete the bracketed
-   prompts. Keep the structure and every rule that is already there; you are filling blanks, not
-   rewriting the file.
-2. **`2. Areas/*.md`** — rename the files to their areas, update the `# Heading` and the `area:`
-   frontmatter inside each, and fill in the one-line description of what belongs there. Delete the
-   "Rename or replace this area" paragraph once it is theirs.
-3. **`0. Dashboards/2. Areas Dashboard`** — the Untriaged Tasks query lists the five default tag
+1. **`.claude/CLAUDE.md`**: replace every `FILL IN` block with their answers, including the
+   assistant name. Delete the bracketed prompts. Keep the structure and every rule that is already
+   there; you are filling blanks, not rewriting the file. The worked task-tagging example under
+   "Task tagging" uses the default `#home` and `#creation` tags: change them to two of their own
+   Area tags so the example points at something real.
+2. **`2. Areas/*.md`**: rename the files to their areas, update the `# Heading` and the `area:`
+   frontmatter inside each, and fill in the one-line description of what belongs there. Update the
+   area name in the Projects query and the tag in the Open tasks query and its caption. Delete the
+   "Rename or replace this area" paragraph once it is theirs. Leave "Current state" blank.
+3. **`0. Dashboards/2. Areas Dashboard`**: the Untriaged Tasks query lists the five default tag
    names. Update it to match their actual areas, or that view silently reports nothing useful.
-4. **`3. Projects/`** — create a note for each project they named, using the same structure as
-   `Set Up This Vault`.
-5. **`5. Meta/Priority Ranking`** — add a row per project, in the order they say matters. Row order
-   is the ranking; there is no number column.
+4. **Anything else that names an old Area.** `3. Projects/Set Up This Vault` carries
+   `area: "[[Creation]]"` and `#creation` tags, and `5. Meta/Priority Ranking` has a Creation row.
+   If Creation was renamed or replaced, point those at one of their Areas.
 
-**Step 3 is the one that gets forgotten.** Renaming an Area without updating that query leaves a
-dashboard that looks fine and reports nothing, which is worse than one that is visibly broken.
+**Steps 3 and 4 are the ones that get forgotten.** Renaming an Area without updating the queries
+that name it leaves a view that looks fine and reports nothing, which is worse than one that is
+visibly broken.
 
 ## When you are done
 
-Commit the changes. Then tell them, briefly:
+Tell them, briefly:
 
 - Which Areas they now have
-- Which projects were created
-- That the next thing to do is write today's daily note badly and ask you to process it
+- That the next thing to do is describe each Area's current state, one at a time, by asking you to
+  interview them about it
+- And to write today's daily note badly, then ask you to process it
 
 Do not summarise the interview back to them. They were there.
 
