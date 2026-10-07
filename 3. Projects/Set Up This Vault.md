@@ -10,8 +10,7 @@ tags: [setup]
 Make this template yours. **Finish line: every FILL IN is gone and you have processed one real
 daily note.**
 
-Delete this note once it is done. It exists so the dashboards have something to show on your first
-day, and so your first tasks are already written.
+Delete this note once it is done. It exists so your first tasks are already written.
 
 ## Tasks
 
@@ -22,7 +21,6 @@ day, and so your first tasks are already written.
 
 - Describe each Area's current state, one Area at a time, by asking Claude to interview you.
 - Write one daily note badly, then ask Claude to process it.
-- Update the tag names in the Untriaged Tasks query on the Areas Dashboard to match your areas.
 - Delete this note.
 
 ## Notes/Log

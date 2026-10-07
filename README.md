@@ -35,8 +35,7 @@ Then open the folder in Obsidian, install the Dataview and Calendar community pl
 ```
 .claude/CLAUDE.md           the rules Claude reads at the start of every session
 .claude/skills/vault-setup  an interview that fills those rules in by asking you
-.obsidian/                  daily-note folder, date format, template path, preset
-0. Dashboards               four starter views to try; delete any you stop opening
+.obsidian/                  daily-note folder, date format, template path
 00. Inbox                   captured with nowhere to put it yet
 1. Journal                  daily notes, and a Processed subfolder
 2. Areas                    five starting areas, rename them to yours

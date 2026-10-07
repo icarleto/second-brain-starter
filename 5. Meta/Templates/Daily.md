@@ -35,10 +35,8 @@ if (rows.length === 0) {
 
 ## Notes
 
-Write as you go, one heading per project you actually touched today. Messy is correct here.
+Write as you go, in whatever order it comes out. Messy is correct here.
 Do not sort it and do not decide where anything belongs. That is the job you are handing off.
-
-###
 
 ## Tasks
 

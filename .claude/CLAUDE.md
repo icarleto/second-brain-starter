@@ -7,7 +7,7 @@ starts with no memory of the last one, but it should not start with no context.
 **Standing order at the start of any real session:** read this file, then today's daily note in
 `1. Journal`, before doing anything else.
 
-Everything marked **FILL IN** is a blank you complete. Delete the bracketed prompt once you have.
+Everything marked **FILL IN** is a blank you complete. Replace the FILL IN prompt with your answer.
 
 ---
 
@@ -45,7 +45,6 @@ FILL IN: the register you want. Some worth copying:
 ## The vault
 
 ```
-0. Dashboards   views into everything else, no original content lives here
 00. Inbox       captured with nowhere to put it yet, should be near empty
 1. Journal      daily notes, one per day
 2. Areas        ongoing responsibilities, no finish line
@@ -116,7 +115,7 @@ Tasks carry their area as an inline tag and their project as a wikilink:
 ```
 
 The inline tag is what makes per-area lists work. Dataview task queries do not inherit page
-frontmatter, so a task with no inline tag is invisible to them and lands in Untriaged.
+frontmatter, so a task with no inline tag is invisible to them.
 
 ### One task lives in exactly one place
 
@@ -148,7 +147,7 @@ The rules above say what a note *is*. These are about not damaging one on the wa
 
 - **Never break a Dataview block.** A ```` ```dataview ```` or ```` ```dataviewjs ```` fence is
   executable code, not prose, and a mangled query **renders empty rather than erroring**. That
-  looks exactly like a dashboard correctly reporting nothing, which is the worst kind of failure
+  looks exactly like a query correctly reporting nothing, which is the worst kind of failure
   because nobody notices it. Do not reformat, rewrap or tidy a query while editing the note around
   it. Change one only when changing it is the actual task.
 - **`.obsidian/` is off limits unless it is the task.** It is Obsidian's own config, not vault
@@ -172,7 +171,7 @@ The rules above say what a note *is*. These are about not damaging one on the wa
 
 1. **Process the day's daily note when I ask,** by the rules under "Daily notes are
    near-immutable". A daily that is still unprocessed after its day has ended is worth mentioning.
-2. **Watch for drift and flag it without being asked:** broken links, a dashboard returning
+2. **Watch for drift and flag it without being asked:** broken links, a query returning
    nothing, a project marked active whose date has passed, a task with no area tag.
 3. **When you defer an idea, write it down** with the reason it was skipped, and delete the entry
    when it is done. "Not worth it yet" and "blocked on a decision" and "too risky right now" age

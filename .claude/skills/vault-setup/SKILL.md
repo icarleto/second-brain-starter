@@ -80,7 +80,7 @@ it keeps coming up in their journal it will be worth making a project.
 ## What to change
 
 1. **`.claude/CLAUDE.md`**: replace every `FILL IN` block with their answers, including the
-   assistant name. Delete the bracketed prompts. Keep the structure and every rule that is already
+   assistant name. Delete the FILL IN prompts. Keep the structure and every rule that is already
    there; you are filling blanks, not rewriting the file. The worked task-tagging example under
    "Task tagging" uses the default `#home` and `#creation` tags: change them to two of their own
    Area tags so the example points at something real.
@@ -88,15 +88,13 @@ it keeps coming up in their journal it will be worth making a project.
    frontmatter inside each, and fill in the one-line description of what belongs there. Update the
    area name in the Projects query and the tag in the Open tasks query and its caption. Delete the
    "Rename or replace this area" paragraph once it is theirs. Leave "Current state" blank.
-3. **`0. Dashboards/2. Areas Dashboard`**: the Untriaged Tasks query lists the five default tag
-   names. Update it to match their actual areas, or that view silently reports nothing useful.
-4. **Anything else that names an old Area.** `3. Projects/Set Up This Vault` carries
+3. **Anything else that names an old Area.** `3. Projects/Set Up This Vault` carries
    `area: "[[Creation]]"` and `#creation` tags, and `5. Meta/Priority Ranking` has a Creation row.
    If Creation was renamed or replaced, point those at one of their Areas.
 
-**Steps 3 and 4 are the ones that get forgotten.** Renaming an Area without updating the queries
-that name it leaves a view that looks fine and reports nothing, which is worse than one that is
-visibly broken.
+**Step 3 is the one that gets forgotten.** Renaming an Area without updating what
+points at it leaves a query or link that looks fine and reports nothing, which is worse than one
+that is visibly broken.
 
 ## When you are done
 
