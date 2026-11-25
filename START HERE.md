@@ -1,68 +1,27 @@
----
-type: meta
-tags: [meta, onboarding]
----
-
 # Start here
 
-You have a working vault. Three things make it yours.
+This folder is your second brain. It is plain text notes, and Claude reads and writes them for you. You do the thinking. Claude does the filing.
 
-## 1. Run the setup interview
+## Begin
 
-Open Claude Code in this folder and say:
+1. Open this folder in Claude Desktop (Code tab, Local) and say: `Say hello and tell me what you can do here.`
+2. Drop anything into `00. Inbox`: a note from a call, an objection you heard, a half idea. Messy is fine.
+3. Tell Claude: `File my Inbox.` It moves each item to the right place and says why.
+4. Ask it a question about your own notes: `What did that buyer say about timing?` It answers and names the note it used.
 
-```
-Run the vault setup.
-```
+## Make it yours
 
-Claude will ask you about yourself, your work, your money situation, who else is affected by your
-decisions, how you want to be spoken to, and what your Areas should be. Then it writes its own
-instructions from your answers and renames the Areas to yours.
+- Open `.claude/CLAUDE.md`. Fill in "About me" with as much or as little as you want, work or life. The more it knows, the better it helps.
+- The five notes in `2. Areas` are a starting point. Rename them, replace them, or add your own.
+- Claude will suggest a new rule or skill when it notices you repeating yourself. You say yes or no. Nothing is added without your yes.
 
-You are not filling in a form. You are telling it what it needs to know, once, so that every
-session afterwards already knows.
+## What the folders are
 
-**Answer the personal questions as honestly as you are willing to.** It asks about money and about
-who else is affected by your decisions because those change the advice it gives. A short answer is
-fine and so is declining. It will not ask twice.
+- `00. Inbox`: anything new, not sorted yet. Should be near empty.
+- `2. Areas`: parts of your work you keep up, with no finish line.
+- `3. Projects`: things with a finish line.
+- `4. Resources`: reference material you will look up again.
+- `5. Meta`: notes about how this brain works.
+- `99. Archive`: done or old.
 
-**When it asks what you are working on, "nothing yet" is a good answer.** Projects are not phase
-one. They will show up on their own, from what you write over the next few weeks.
-
-## 2. Describe your Areas
-
-Each Area note opens with a "current state" section, and right now it is blank. Filling it in is
-the real work of phase one. Do it by talking, one Area at a time:
-
-```
-Interview me about my Home area, then write its current state.
-```
-
-Say where things actually stand. Plain and specific beats polished.
-
-## 3. Write today's daily note badly
-
-`Ctrl/Cmd+P`, then **Daily notes: Open today's daily note**.
-
-Write it badly on purpose. Do not organise, do not decide what belongs where. Dump the day in
-whatever order it comes out, mixing work and home and everything else together. That is what a real
-daily note looks like, and the filing is the job you are handing off.
-
-Then tell Claude:
-
-```
-Process today's daily note.
-```
-
-Watch where things land. Nothing in your prose gets rewritten or deleted; content is copied out,
-never moved.
-
-Do it once, at the end of the day, over the whole note. When you tell it you are done for the day,
-it marks the note processed and moves it into `1. Journal/Processed`. If you write more after it
-has run, say so and it reads the note again, filing what is new and nothing twice.
-
----
-
-**The only step that fails is the daily note.** Everything else is setup and it either worked or it
-did not. The habit is what kills systems like this. Five honest minutes a day, written badly, and
-let the machine do the filing.
+Obsidian is optional. It reads this folder as it is.
