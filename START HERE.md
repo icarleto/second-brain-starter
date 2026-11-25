@@ -8,6 +8,7 @@ This folder is your second brain. It is plain text notes, and Claude reads and w
 2. Drop anything into `00. Inbox`: a note from a call, an objection you heard, a half idea. Messy is fine.
 3. Tell Claude: `File my Inbox.` It moves each item to the right place and says why.
 4. Ask it a question about your own notes: `What did that buyer say about timing?` It answers and names the note it used.
+5. Ask: `What can you teach me?` Claude keeps a list of capabilities in `5. Meta/What I can teach you.md` and offers one at a time.
 
 ## Make it yours
 

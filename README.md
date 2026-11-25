@@ -29,6 +29,6 @@ Then read `START HERE.md`.
 2. Areas            five starting areas, rename them to yours
 3. Projects         one setup project
 4. Resources        reference material
-5. Meta             how this brain works
+5. Meta             how this brain works, and what Claude can teach you
 99. Archive         done or old
 ```
