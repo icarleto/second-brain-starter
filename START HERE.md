@@ -4,8 +4,8 @@ This folder is your second brain. It is plain text notes, and Claude reads and w
 
 ## Begin
 
-1. Open this folder in Claude Desktop (Code tab, Local) and say: `Say hello and tell me what you can do here.`
-2. Drop anything into `00. Inbox`: a note from a call, an objection you heard, a half idea. Messy is fine.
+1. Open this folder in Claude Desktop (Code tab, Local) and say: `Start my first session.` Claude asks for what you already have: last week's call notes, objections you remember, an opener that worked. Ten rough items is plenty. It files them and answers one real question from them, so you see it work on day one.
+2. After that, drop anything into `00. Inbox`: a note from a call, an objection you heard, a half idea. Messy is fine.
 3. Tell Claude: `File my Inbox.` It moves each item to the right place and says why.
 4. Ask it a question about your own notes: `What did that buyer say about timing?` It answers and names the note it used.
 5. Ask: `What can you teach me?` Claude keeps a list of capabilities in `5. Meta/What I can teach you.md` and offers one at a time.
@@ -24,5 +24,7 @@ This folder is your second brain. It is plain text notes, and Claude reads and w
 - `4. Resources`: reference material you will look up again.
 - `5. Meta`: notes about how this brain works.
 - `99. Archive`: done or old.
+
+If Claude changes or overwrites a file you did not want changed, OneDrive keeps old versions: right-click the file in Finder, or open it on onedrive.com, and restore an earlier one.
 
 Obsidian is optional. It reads this folder as it is.
